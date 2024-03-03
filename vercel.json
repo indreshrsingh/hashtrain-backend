@@ -8,7 +8,7 @@
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "django_training_website/wsgi.py"
+        "dest": "training_website/wsgi.py"
       }
     ]
 }

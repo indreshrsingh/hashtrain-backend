@@ -53,6 +53,10 @@ INSTALLED_APPS = [
     
 ]
 
+STATICFILES_FINDERS = [
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

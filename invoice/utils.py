@@ -31,8 +31,9 @@ def upload_to_google_drive(pdf_content, invoice_data):
         if creds and creds.expired and creds.refresh_token:
             creds.refresh(GoogleRequest())
         else:
-            flow = InstalledAppFlow.from_client_secrets_file(
-                os.getenv("CRED") , SCOPES
+            config = json.loads(os.environ['CRED'])
+            flow = InstalledAppFlow.from_client_config(
+                config, SCOPES
             )
             creds = flow.run_local_server(port=0)
         # Save credentials for next run

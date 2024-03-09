@@ -21,4 +21,5 @@ reportlab==4.1.0
 sqlparse==0.4.4
 typing_extensions==4.10.0
 tzdata==2024.1
+urllib3==1.26.6
 whitenoise==6.4.0

@@ -35,7 +35,7 @@ def upload_to_google_drive(pdf_content, invoice_data):
             flow = InstalledAppFlow.from_client_config(
                 config, SCOPES
             )
-            creds = flow.run_console()
+            creds = flow.run_local_server()
         # Save credentials for next run
         with open("token.json", "w") as token:
             token.write(creds.to_json())

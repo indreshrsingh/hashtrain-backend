@@ -15,7 +15,7 @@ from google.auth.transport.requests import Request
 
 # If modifying these scopes, ensure to delete the file token.json.
 SCOPES = ["https://www.googleapis.com/auth/drive.file"]
-CREDENTIALS_PATH = "credentials.json"
+
 
 from google.auth.transport.requests import Request as GoogleRequest
 

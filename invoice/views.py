@@ -4,6 +4,7 @@ from .forms import InvoiceForm
 from .models import Invoice
 from .utils import generate_pdf, upload_to_google_drive
 from django.shortcuts import get_object_or_404
+from django.contrib.admin.views.decorators import staff_member_required
 
 import logging
 
